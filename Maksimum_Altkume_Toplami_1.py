@@ -4,7 +4,7 @@ def maxSubSum1(myvector):
         for j in range(i,len(myvector)):
             thisSum=0
             for k in range (i,j):
-                thisSum=thisSum+myarray[j]
+                thisSum=thisSum+myarray[k]
                 if (thisSum>maxSum):
                     maxSum=thisSum
     return maxSum
