@@ -9,5 +9,5 @@ def maxSubSum2(myvector):
     return maxSum
     
     
-myarray=[4, -3, 5, -2, -1, 2, 6,-2]
+myarray=[4,-3,5,-2,-1,2,6,-2]
 print(maxSubSum2(myarray))
