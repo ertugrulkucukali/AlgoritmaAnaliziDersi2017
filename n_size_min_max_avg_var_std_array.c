@@ -11,7 +11,9 @@ int main(int argc, char *argv[])
    int   i;
    float x[N], toplam = 0.0, ort, std_sap = 0.0;
 
-   /* ortalama hesabı */
+   /* ortalama hesabı 
+      İNCELENDİĞİNDE KARMAŞIKLIK O(N) OLUR.
+   */
    for(i=0; i<N; i++)
    {
       printf("%d. sayi : ",i+1); 
@@ -22,7 +24,9 @@ int main(int argc, char *argv[])
 
    ort = toplam/N;
 
-   /* standart sapma hesabı */
+   /* standart sapma hesabı 
+      İNCELENDİĞİNDE KARMAŞIKLIK O(N) OLUR.
+   */
    for(toplam = 0.0, i=0; i<N; i++)
        toplam += pow(x[i]-ort, 2.0);
 
@@ -32,16 +36,21 @@ int main(int argc, char *argv[])
    printf("Standart sapma = %f\n",std_sap);
    printf("Varyans= %f\n", std_sap * std_sap);
 
-
+   /* En büyük elamanın bulunması 
+      İNCELENDİĞİNDE KARMAŞIKLIK O(N) OLUR.
+   */
    int   b, eb, ek, k;
 
-   eb = x[0]; 
-
+   eb = x[0];
+   
    for(b=1; b<N; b++)
       if( x[b]>eb ) eb = x[b];
 
    printf("En buyuk eleman = %d\n",eb);
    
+   /* En küçük elamanın bulunması 
+      İNCELENDİĞİNDE KARMAŞIKLIK O(N) OLUR.
+   */ 
    ek = x[0];
    
    for(k=1; k<N; k++)
