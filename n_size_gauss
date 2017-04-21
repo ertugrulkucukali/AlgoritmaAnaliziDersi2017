@@ -51,7 +51,6 @@ x[n]=dizi[n][n+1]/dizi[n][n];
       
 }
 
-
 int main() {
       printf("Kaclik matris olsun? : ");
       scanf("%d",&b);
