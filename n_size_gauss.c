@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <windows.h>
 
+//  "gaussEliminasyon" FONKSİYONU İNCELENDİĞİNDE KARMAŞIKLIK O(N^2) OLUR.
+
 int i,j,k,b;
 float dizi[50][50],c,x[10],toplam=0.0;
 
@@ -59,4 +61,4 @@ int main() {
     
     system("PAUSE");
     return 0;
-}   
+}
